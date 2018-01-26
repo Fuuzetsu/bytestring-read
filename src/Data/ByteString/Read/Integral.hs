@@ -7,8 +7,8 @@ module Data.ByteString.Read.Integral
     , int
     ) where
 
-import Data.Proxy.Compat
-import GHC.TypeLits.Compat
+import Data.Proxy
+import GHC.TypeLits
 
 import Data.ByteString.Read.Class as C
 

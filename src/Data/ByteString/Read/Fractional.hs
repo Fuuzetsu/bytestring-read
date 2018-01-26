@@ -18,8 +18,8 @@ module Data.ByteString.Read.Fractional
     , fractional'
     ) where
 
-import GHC.TypeLits.Compat
-import Data.Proxy.Compat
+import GHC.TypeLits
+import Data.Proxy
 
 import Data.ByteString.Read.Class as C
 
@@ -164,4 +164,4 @@ fractional s0
 -- double = fractional
 -- @
 double :: Source s => s -> Maybe (Double, s)
-double = fractional 
+double = fractional

@@ -12,7 +12,7 @@ module Data.ByteString.Read.Class
     ) where
 
 import Data.Word
-import GHC.TypeLits.Compat
+import GHC.TypeLits
 import qualified Data.ByteString as S
 import Data.ByteString.Unsafe
 import qualified Data.ByteString.Lazy as L
@@ -24,7 +24,7 @@ class (Fractional a, Num (Fraction a), Ord (Fraction a)) => ReadFractional a whe
     -- | maximum value of fractional part.
     --
     -- Nothing if arbitrary-precision.
-    -- 
+    --
     -- @
     -- Just $ fromIntegral (floatRadix t) ^ floatDigits t
     -- @
